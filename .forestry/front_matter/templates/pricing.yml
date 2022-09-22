@@ -1,4 +1,85 @@
 ---
 label: Pricing
 hide_body: true
-fields: []
+display_field: title
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: desc
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
+- name: cards
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: price
+    type: field_group
+    config: {}
+    fields:
+    - name: currency
+      type: text
+      config:
+        required: true
+      label: Currency
+      default: "£"
+    - name: price
+      type: number
+      label: Price
+      description: ''
+      default: 0
+      required: true
+      config:
+        min: 
+        max: 
+        step: 
+        required: true
+    - name: frequency
+      type: text
+      config:
+        required: false
+      label: Frequency
+      description: 'Sub text explaining frequency of pricing. Example: Per month,
+        Per year, One-time.'
+    label: Price
+  - name: button
+    type: field_group
+    config: {}
+    fields:
+    - name: text
+      type: text
+      config:
+        required: true
+        max: 55
+      label: Text
+      default: Get Started
+    - name: href
+      type: text
+      config:
+        required: true
+      label: URL
+    label: Button
+  - name: popular
+    type: boolean
+    label: Active
+    description: Do you want this card to stand out in the primary colour?
+  config:
+    min: 1
+    max: 
+    labelField: 
+  label: Cards
+- name: lightBackground
+  type: boolean
+  label: Light Background
