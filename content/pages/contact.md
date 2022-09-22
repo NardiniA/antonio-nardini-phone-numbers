@@ -69,6 +69,21 @@ sections:
       - Questions
       - Issues
       - Other
+    - template: textarea
+      config:
+        required:
+          value: true
+          message: This field is required.
+        minLength:
+          message: Value is too short.
+          value: 
+        maxLength:
+          message: Value is too long.
+          value: 
+        size: full
+      name: Message
+      label: Message
+      placeholder: Ask us a question here...
   title: Contact Form
   description: Drop us a line at <a href="mailto:contact@antonionardini" title="Email
     Us" target="_blank">contact@antonionardini.com</a><br>Or call us at <a href=""
