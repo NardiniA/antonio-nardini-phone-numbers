@@ -75,6 +75,24 @@ fields:
     type: boolean
     label: Active
     description: Do you want this card to stand out in the primary colour?
+  - name: features
+    type: field_group_list
+    fields:
+    - name: text
+      type: textarea
+      default: ''
+      config:
+        required: true
+        wysiwyg: true
+        schema:
+          format: html
+        max: 55
+      label: Text
+    config:
+      min: 1
+      max: 
+      labelField: text
+    label: Features
   config:
     min: 1
     max: 
