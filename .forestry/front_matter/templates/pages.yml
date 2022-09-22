@@ -34,6 +34,7 @@ fields:
   - gallery
   - video-call-to-action
   - faq
+  - steps
   config:
     min: 1
     max: 
