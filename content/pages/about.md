@@ -30,7 +30,7 @@ sections:
 - template: features
   cardBased: true
   lightBackground: true
-  title: Website Features
+  title: Why Choose Us?
   features:
   - icon: broadcast
     active: false
