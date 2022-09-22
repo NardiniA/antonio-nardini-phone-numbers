@@ -39,4 +39,5 @@ fields:
     min: 1
     max: 
 pages:
+- content/pages/about.md
 - content/pages/home.md
