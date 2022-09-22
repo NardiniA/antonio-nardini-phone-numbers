@@ -1,4 +1,14 @@
 ---
 label: Steps
 hide_body: true
-fields: []
+fields:
+- name: steps
+  type: blocks
+  label: Steps
+  template_types:
+  - about
+  - how-to
+  - features
+  config:
+    min: 1
+    max: 
