@@ -1,4 +1,10 @@
 ---
 label: Phone Numbers
 hide_body: true
-fields: []
+display_field: title
+fields:
+- name: section_header
+  type: include
+  config: {}
+  template: section-header
+  label: Section Header
