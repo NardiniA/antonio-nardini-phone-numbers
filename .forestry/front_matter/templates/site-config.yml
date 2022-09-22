@@ -5,13 +5,23 @@ display_field: metaTitle
 fields:
 - type: text
   name: metaTitle
-  label: metaTitle
+  label: Page Title
+  config:
+    required: true
+    max: 155
+  default: Phone Number Directory - Antonio Nardini
 - type: text
   name: metaDescription
-  label: metaDescription
+  label: Page Description
+  config:
+    required: true
+    max: 155
 - type: file
   name: logo
-  label: logo
+  label: Logo
+  default: https://res.cloudinary.com/antonio-nardini/image/upload/v1663855106/logo_e2iunw.svg
 - type: text
   name: logoText
-  label: logoText
+  label: Logo Text
+  config:
+    required: true
