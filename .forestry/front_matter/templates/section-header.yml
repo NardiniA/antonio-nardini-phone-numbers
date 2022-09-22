@@ -1,4 +1,19 @@
 ---
 label: Section Header
 hide_body: true
-fields: []
+display_field: title
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Section Title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html
+  label: Section Description
