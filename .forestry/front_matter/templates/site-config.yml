@@ -1,6 +1,7 @@
 ---
 label: Site Config
 hide_body: true
+display_field: metaTitle
 fields:
 - type: text
   name: metaTitle
