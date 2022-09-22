@@ -1,4 +1,24 @@
 ---
 label: Stats
 hide_body: true
-fields: []
+fields:
+- name: stats
+  type: field_group_list
+  fields:
+  - name: count
+    type: text
+    config:
+      required: true
+      max: 7
+    label: Count
+  - name: title
+    type: text
+    config:
+      required: true
+      max: 55
+    label: Title
+  config:
+    min: 1
+    max: 4
+    labelField: title
+  label: Stats
