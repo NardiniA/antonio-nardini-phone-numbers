@@ -25,3 +25,5 @@ fields:
   label: Logo Text
   config:
     required: true
+pages:
+- config/site.config.json
