@@ -1,4 +1,39 @@
 ---
 label: How To
 hide_body: true
-fields: []
+display_field: title
+fields:
+- name: section_header
+  type: include
+  config: {}
+  template: section-header
+  label: Section Header
+- name: process
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: text
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: html
+    label: Text
+  config:
+    min: 1
+    max: 
+    labelField: 
+  label: Process
+- name: imgs
+  type: image_gallery
+  config: {}
+  label: Images
+- name: lightBackground
+  type: boolean
+  label: Light Background
