@@ -25,3 +25,13 @@ fields:
   type: boolean
   label: Slim
   description: Do you want it to be smaller in height?
+- name: buttons
+  type: blocks
+  label: Buttons
+  template_types:
+  - app-store-badge
+  - play-store-badge
+  - button
+  config:
+    min: 
+    max: 
