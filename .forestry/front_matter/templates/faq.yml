@@ -1,4 +1,35 @@
 ---
 label: FAQ
 hide_body: true
-fields: []
+display_field: title
+fields:
+- name: section_header
+  type: include
+  config: {}
+  template: section-header
+  label: Section Header
+- name: questions
+  type: field_group_list
+  fields:
+  - name: question
+    type: text
+    config:
+      required: true
+    label: Question
+  - name: answer
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: html
+    label: Answer
+  config:
+    min: 2
+    max: 
+    labelField: question
+  label: Questions
+- name: lightBackground
+  type: boolean
+  label: Light Background
