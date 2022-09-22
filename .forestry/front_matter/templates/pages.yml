@@ -25,6 +25,8 @@ fields:
   template_types:
   - intro
   - banner
+  - testimonials
+  - pricing
   config:
     min: 1
     max: 
