@@ -29,7 +29,7 @@ sections:
   lightBackground: false
 - template: features
   cardBased: true
-  lightBackground: true
+  lightBackground: false
   title: Website Features
   features:
   - icon: broadcast
