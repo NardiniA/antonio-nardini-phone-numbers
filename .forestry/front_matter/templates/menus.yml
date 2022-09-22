@@ -4,24 +4,34 @@ hide_body: true
 fields:
 - type: field_group_list
   name: mainMenu
-  label: mainMenu
+  label: Navigation Links
   fields:
   - type: text
-    name: template
-    label: template
-  - type: text
     name: text
-    label: text
+    label: Text
+    config:
+      required: true
+      max: 55
   - type: text
     name: href
-    label: href
+    label: URL
+    config:
+      required: true
+  config:
+    min: 1
+    max: 6
+    labelField: text
 - type: field_group
   name: cta
-  label: cta
   fields:
   - type: text
     name: text
-    label: text
+    label: Text
+    config:
+      required: true
   - type: text
     name: href
-    label: href
+    label: URL
+    config:
+      required: true
+  label: Header Button
