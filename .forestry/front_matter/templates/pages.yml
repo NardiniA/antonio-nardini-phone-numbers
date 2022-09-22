@@ -24,6 +24,7 @@ fields:
   label: Sections
   template_types:
   - intro
+  - banner
   config:
     min: 1
     max: 
