@@ -1,4 +1,37 @@
 ---
 label: Video Call To Action
 hide_body: true
-fields: []
+display_field: title
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: text
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Text
+- name: button
+  type: field_group
+  config: {}
+  fields:
+  - name: icon
+    type: text
+    config:
+      required: true
+    label: Icon
+  - name: link
+    type: text
+    config:
+      required: true
+    label: Link
+  label: Button
+- name: lightBackground
+  type: boolean
+  label: Light Background
