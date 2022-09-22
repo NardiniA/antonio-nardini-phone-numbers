@@ -1,54 +1,54 @@
 {
-    "subscribe": {
-        "title": "Sign Up to Our Newsletter.",
-        "subtitle": "Subscribe for updates, special offers and more.",
-        "display": true
-    },
-    "main": {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.",
-        "social": [
-            {
-                "href": "/",
-                "text": "Facebook",
-                "icon": "facebook-square"
-            },
-            {
-                "href": "/",
-                "text": "Twitter",
-                "icon": "twitter"
-            },
-            {
-                "href": "/",
-                "text": "Instagram",
-                "icon": "instagram"
-            }
-        ],
-        "links": [
-            {
-                "text": "Intro",
-                "href": "/"
-            },
-            {
-                "text": "About",
-                "href": "/about"
-            },
-            {
-                "text": "Reviews",
-                "href": "/reviews"
-            },
-            {
-                "text": "Pricing",
-                "href": "/pricing"
-            },
-            {
-                "text": "Download",
-                "href": "/download"
-            }
-        ],
-        "contact": "Do you have a question? Send us a word: <br> <a href=\"mailto:#0\" class=\"s-footer__mail-link\">support@yoursite.com</a>",
-        "copyright": [
-            "© Booth 2021",
-            "Designed by <a href=\"https://www.styleshout.com/\">StyleShout</a>"
-        ]
-    }
+  "subscribe": {
+    "title": "Sign Up to Our Newsletter.",
+    "subtitle": "Subscribe for updates, special offers and more.",
+    "display": true
+  },
+  "main": {
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.",
+    "social": [
+      {
+        "href": "/",
+        "text": "Facebook",
+        "icon": "facebook-square"
+      },
+      {
+        "href": "/",
+        "text": "Twitter",
+        "icon": "twitter"
+      },
+      {
+        "href": "/",
+        "text": "Instagram",
+        "icon": "instagram"
+      }
+    ],
+    "links": [
+      {
+        "text": "Intro",
+        "href": "/"
+      },
+      {
+        "text": "About",
+        "href": "/about"
+      },
+      {
+        "text": "Reviews",
+        "href": "/reviews"
+      },
+      {
+        "text": "Pricing",
+        "href": "/pricing"
+      },
+      {
+        "text": "Download",
+        "href": "/download"
+      }
+    ],
+    "contact": "Do you have a question? Send us a word: <br> <a href=\"mailto:#0\" class=\"s-footer__mail-link\">support@yoursite.com</a>",
+    "copyright": [
+      "© Booth 2021",
+      "Designed by <a href=\"https://www.styleshout.com/\">StyleShout</a>"
+    ]
+  }
 }
