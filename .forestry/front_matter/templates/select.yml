@@ -1,4 +1,68 @@
 ---
 label: Select
 hide_body: true
-fields: []
+display_field: name
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+    max: 55
+  label: Name
+- name: label
+  type: text
+  config:
+    required: true
+    max: 55
+  label: Label
+- name: placeholder
+  type: text
+  config:
+    required: true
+    max: 155
+  label: Placeholder
+- name: options
+  type: list
+  config:
+    use_select: false
+    min: 2
+    max: 
+  label: Options
+- name: config
+  type: field_group
+  config: {}
+  fields:
+  - name: required
+    type: field_group
+    config: {}
+    fields:
+    - name: value
+      type: boolean
+      label: Value
+      default: true
+    - name: message
+      type: text
+      config:
+        required: false
+        max: 55
+      label: Error Message
+      default: This field is required.
+      showOnly:
+        field: value
+    label: Required
+  - name: size
+    type: select
+    default: full
+    config:
+      required: true
+      options:
+      - quarter
+      - half
+      - full
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Field Size
+  label: Configuration
