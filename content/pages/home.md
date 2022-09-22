@@ -53,9 +53,7 @@ sections:
     - title: Powerful.
       text: Qui dolores perspiciatis aut sint amet illum. Sint quisquam quod laborum
         blanditiis. Inventore tenetur mollitia dolorum dolores quia. Et quia sed.
-        Deserunt facere quidem sed.<strong>Secure.</strong>Exercitationem minima sed
-        similique. Ducimus quis omnis voluptas et nulla. Ad mollitia quibusdam autem
-        quod omnis. Ipsa aspernatur voluptatem illum possimus quasi magni.
+        Deserunt facere quidem sed.
     - title: Secure.
       text: Exercitationem minima sed similique. Ducimus quis omnis voluptas et nulla.
         Ad mollitia quibusdam autem quod omnis. Ipsa aspernatur voluptatem illum possimus
