@@ -1,11 +1,37 @@
 ---
 label: Form
 hide_body: true
+display_field: action
 fields:
+- name: action
+  type: text
+  config:
+    required: true
+  label: Action
+  description: 'URL: Where is the form going?'
+  default: https://airform.io/contact@antonionardini.com
+- name: method
+  type: select
+  default: POST
+  config:
+    required: true
+    options:
+    - GET
+    - POST
+    - PUT
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Method
 - name: fields
   type: blocks
   label: Fields
-  template_types: []
+  template_types:
+  - input
+  - select
+  - textarea
   config:
     min: 1
     max: 
