@@ -1,4 +1,10 @@
 ---
 label: App Store Badge
 hide_body: true
-fields: []
+display_field: href
+fields:
+- name: href
+  type: text
+  config:
+    required: true
+  label: URL
