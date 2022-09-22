@@ -16,19 +16,16 @@ sections:
 - type: document
   path: config/site.config.json
   label: Site Config
-  match: "**/*"
 - type: document
   path: config/menus.json
   label: Menus
-  match: "**/*"
 - type: document
   path: config/footer.json
   label: Footer
-  match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
-front_matter_path: ''
-use_front_matter_path: false
+upload_dir: ''
+public_path: ''
+front_matter_path: https://res.cloudinary.com/antonio-nardini/image/upload
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   install_dependencies_command: npm install
