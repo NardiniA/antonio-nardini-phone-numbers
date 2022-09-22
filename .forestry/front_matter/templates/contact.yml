@@ -1,0 +1,20 @@
+---
+label: Contact
+hide_body: true
+display_field: title
+fields:
+- name: section_header
+  type: include
+  config: {}
+  template: section-header
+  label: Section Header
+- name: form
+  type: field_group
+  config: {}
+  fields:
+  - name: form
+    type: include
+    config: {}
+    template: form
+    label: Form
+  label: Form
