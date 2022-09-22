@@ -7,8 +7,9 @@ fields:
   label: Steps
   template_types:
   - about
-  - how-to
   - features
+  - how-to
+  - stats
   config:
     min: 1
     max: 
