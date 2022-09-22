@@ -179,6 +179,11 @@ sections:
       text: Get Started
       href: "#0"
     popular: true
+    features:
+    - text: 5000GB Storage
+    - text: Unlimited Bandwidth
+    - text: 100 Email Accounts
+    - text: Backup &amp; Restore
   - title: Free
     price:
       currency: "£"
@@ -188,6 +193,11 @@ sections:
       text: Get Started
       href: "#0"
     popular: false
+    features:
+    - text: 50GB Storage
+    - text: 50GB Bandwidth
+    - text: 30 Email Accounts
+    - text: Backup &amp; Restore
   lightBackground: false
 - template: call-to-action
   title: Thousands of People Are Now Using Booth. Join Our Community!
