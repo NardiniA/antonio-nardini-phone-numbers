@@ -35,12 +35,13 @@ sections:
   - icon: broadcast
     active: false
     title: Fast
-    text: We make websites that are over 50% faster than WordPress sites.
+    text: Our websites are over 50% faster than WordPress sites which are used by
+      455 million users.
   - title: Secure
     active: true
     icon: check-shield
     text: Our websites are as secure as we can make them no access to data from the
-      end website.
+      end website. Giving you peace of mind.
   - title: Scalable
     active: false
     text: We can utilise worldwide services like AWS or Google to serve our websites
