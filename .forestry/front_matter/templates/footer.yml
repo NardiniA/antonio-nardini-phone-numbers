@@ -4,50 +4,81 @@ hide_body: true
 fields:
 - type: field_group
   name: subscribe
-  label: subscribe
+  label: Subscribe
   fields:
   - type: text
     name: title
-    label: title
+    label: Title
+    config:
+      required: true
   - type: text
     name: subtitle
-    label: subtitle
+    label: Subtitle
+    config:
+      required: true
   - type: boolean
     name: display
-    label: display
+    label: Show
+    default: true
 - type: field_group
   name: main
-  label: main
+  label: Main Footer
   fields:
   - type: textarea
     name: description
-    label: description
+    label: Description
+    config:
+      required: true
   - type: field_group_list
     name: social
-    label: social
+    label: Social
     fields:
     - type: text
-      name: href
-      label: href
-    - type: text
       name: text
-      label: text
+      label: Text
+      config:
+        required: true
+    - type: text
+      name: href
+      label: URL
+      config:
+        required: true
     - type: text
       name: icon
-      label: icon
+      label: Icon
+      config:
+        required: true
+    config:
+      labelField: text
+      min: 
   - type: field_group_list
     name: links
-    label: links
+    label: Links
     fields:
     - type: text
       name: text
-      label: text
+      label: Text
+      config:
+        required: true
     - type: text
       name: href
-      label: href
+      label: URL
+      config:
+        required: true
+    config:
+      labelField: text
+      min: 1
   - type: textarea
     name: contact
-    label: contact
+    label: SubText
+    config:
+      wysiwyg: true
+      schema:
+        format: html
+      required: true
   - type: list
     name: copyright
-    label: copyright
+    label: Copyright
+    config:
+      use_select: false
+      min: 1
