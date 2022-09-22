@@ -1,4 +1,42 @@
 ---
 label: Gallery
 hide_body: true
-fields: []
+display_field: title
+fields:
+- name: section_header
+  type: include
+  config: {}
+  template: section-header
+  label: Section Header
+- name: gallery
+  type: field_group_list
+  fields:
+  - name: img
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: subtitle
+    type: text
+    config:
+      required: true
+      max: 155
+    label: Subtitle
+  - name: link
+    type: text
+    config:
+      required: true
+    label: Link
+  config:
+    min: 1
+    max: 
+    labelField: title
+  label: Gallery
+- name: lightBackground
+  type: boolean
+  label: Light Background
