@@ -55,8 +55,9 @@ sections:
     style: Default
     href: "/contact"
     text: Contact Us
-  text: Need a website? Want the fastest, affordable website available? Look no further.
-    Get started with websites from £150 upfront and then only £10 per year to run.
+  text: Need a website? Want the fastest, <strong>affordable</strong> website available?
+    Look no further. Get started with websites from <strong>£150</strong> upfront
+    and then only <strong>£10 per year</strong> to run.
 - template: faq
   title: Frequently Asked Questions
   description: Got any questions about what we provide? Find the answers here or <a
