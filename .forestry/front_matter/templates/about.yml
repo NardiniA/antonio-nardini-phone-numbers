@@ -1,4 +1,35 @@
 ---
 label: About
 hide_body: true
-fields: []
+display_field: title
+fields:
+- name: section_header
+  type: include
+  config: {}
+  template: section-header
+  label: Section Header
+- name: slider
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: text
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: html
+    label: Text
+  config:
+    min: 1
+    max: 
+    labelField: title
+  label: Slider
+- name: lightBackground
+  type: boolean
+  label: Light Background
