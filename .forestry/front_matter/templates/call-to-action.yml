@@ -1,4 +1,27 @@
 ---
 label: Call To Action
 hide_body: true
-fields: []
+display_field: title
+fields:
+- name: title
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html
+  label: TItle
+- name: text
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: true
+    schema:
+      format: html
+  label: Description
+- name: slim
+  type: boolean
+  label: Slim
+  description: Do you want it to be smaller in height?
