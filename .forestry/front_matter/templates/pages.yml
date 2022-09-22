@@ -1,0 +1,29 @@
+---
+label: Pages
+hide_body: true
+display_field: metaTitle
+fields:
+- name: metaTitle
+  type: text
+  config:
+    required: true
+    max: 155
+  label: Page Title
+- name: metaDescription
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+    max: 155
+  label: Page Description
+- name: sections
+  type: blocks
+  label: Sections
+  template_types:
+  - intro
+  config:
+    min: 1
+    max: 
