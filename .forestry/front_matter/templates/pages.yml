@@ -35,6 +35,7 @@ fields:
   - video-call-to-action
   - faq
   - steps
+  - contact
   config:
     min: 1
     max: 
