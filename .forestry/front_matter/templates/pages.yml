@@ -36,6 +36,7 @@ fields:
   - faq
   - steps
   - contact
+  - phone-numbers
   config:
     min: 1
     max: 
