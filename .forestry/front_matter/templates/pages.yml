@@ -28,6 +28,9 @@ fields:
   - testimonials
   - pricing
   - call-to-action
+  - about
+  - how-to
+  - features
   config:
     min: 1
     max: 
