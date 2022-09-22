@@ -1,4 +1,48 @@
 ---
 label: Testimonials
 hide_body: true
-fields: []
+display_field: title
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: reviews
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: true
+    label: Name
+  - name: position
+    type: text
+    config:
+      required: true
+    label: Subtitle
+    description: More info such as a position, company, etc.
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Avatar
+    default: https://res.cloudinary.com/antonio-nardini/image/upload/v1661857324/blank-profile-picture-ged7da0c0e_640_rqfjp1.png
+  - name: text
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: true
+      schema:
+        format: html
+    label: Text
+  config:
+    min: 2
+    max: 
+    labelField: name
+  label: Reviews
+- name: lightBackground
+  type: boolean
+  label: Light Background
+  description: White background or Light Grey Background?
