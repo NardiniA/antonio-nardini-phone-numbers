@@ -9,9 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "basiclightbox": "^5.0.4",
+    "boxicons": "^2.1.2",
+    "clsx": "^1.2.1",
+    "marked": "^4.1.0",
+    "masonry-layout": "^4.2.2",
     "next": "12.3.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.35.0",
+    "swiper": "^8.4.0"
   },
   "devDependencies": {
     "eslint": "8.23.1",

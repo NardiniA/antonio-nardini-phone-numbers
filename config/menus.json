@@ -1,0 +1,28 @@
+{
+    "mainMenu": [
+        {
+            "template": "nav-link",
+            "text": "Intro",
+            "href": "/"
+        },
+        {
+            "template": "nav-link",
+            "href": "/about",
+            "text": "About"
+        },
+        {
+            "template": "nav-link",
+            "href": "/pricing",
+            "text": "Pricing"
+        },
+        {
+            "template": "nav-link",
+            "href": "/download",
+            "text": "Download"
+        }
+    ],
+    "cta": {
+        "text": "Get The App",
+        "href": "/"
+    }
+}
