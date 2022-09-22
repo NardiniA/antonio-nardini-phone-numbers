@@ -1,4 +1,47 @@
 ---
 label: Features
 hide_body: true
-fields: []
+display_field: title
+fields:
+- name: section_header
+  type: include
+  config: {}
+  template: section-header
+  label: Section Header
+- name: features
+  type: field_group_list
+  fields:
+  - name: icon
+    type: text
+    config:
+      required: true
+    label: Icon
+  - name: title
+    type: text
+    config:
+      required: true
+    label: Title
+  - name: text
+    type: textarea
+    default: ''
+    config:
+      required: true
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Text
+  - name: active
+    type: boolean
+    label: Active
+  config:
+    min: 1
+    max: 
+    labelField: title
+  label: Features
+- name: lightBackground
+  type: boolean
+  label: Light Background
+- name: cardBased
+  type: boolean
+  label: Card Based
+  description: Do you want a more card based design?
