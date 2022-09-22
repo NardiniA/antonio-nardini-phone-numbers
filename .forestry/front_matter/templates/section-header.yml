@@ -6,13 +6,13 @@ fields:
 - name: title
   type: text
   config:
-    required: true
+    required: false
   label: Section Title
 - name: description
   type: textarea
   default: ''
   config:
-    required: true
+    required: false
     wysiwyg: true
     schema:
       format: html
