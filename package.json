@@ -1,5 +1,5 @@
 {
-  "name": "antonio-nardini-virtual-tours",
+  "name": "antonio-nardini-phone-numbers",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "basiclightbox": "^5.0.4",
     "boxicons": "^2.1.2",
     "clsx": "^1.2.1",
+    "gray-matter": "^4.0.3",
     "marked": "^4.1.0",
     "masonry-layout": "^4.2.2",
     "next": "12.3.0",

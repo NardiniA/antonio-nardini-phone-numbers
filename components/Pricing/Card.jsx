@@ -12,27 +12,29 @@ const Card = ({ data }) => {
               <div className="item-plan__top-part">
                   {data.title && <h3 className="item-plan__title">{data.title}</h3>}
                   {data.price && (
-                    <p className="item-plan__price">
-                        <sup>{data.currency}</sup>{data.price}
-                    </p>
+                    <>
+                      <p className="item-plan__price">
+                          <sup>{data?.price.currency}</sup>{data?.price.price}
+                      </p>
+                      {data?.price.frequency && <p className="item-plan__per">{data?.price.frequency}</p>}
+                    </>
                   )}
-                  {data.frequency && <p className="item-plan__per">{data.frequency}</p>}
               </div>
 
               <div className="item-plan__bottom-part">
                   {data.features && (
                     <ul className="item-plan__features">
                         {data?.features.map((feat, index) => (
-                            <li key={feat + "features_key" + index} dangerouslySetInnerHTML={{
-                                __html: feat
+                            <li key={feat.text + "features_key" + index} dangerouslySetInnerHTML={{
+                                __html: feat.text
                             }}></li>
                         ))}
                     </ul>
                   )}
 
-                  {data.btnText && data.btnHref && (
-                    <Link href={data.btnHref} passHref>
-                        <a className="btn btn--primary u-fullwidth">{data.btnText}</a>
+                  {data.button && (
+                    <Link href={data?.button.href} passHref>
+                        <a className="btn btn--primary u-fullwidth">{data?.button.text}</a>
                     </Link>
                   )}
               </div>

@@ -3,7 +3,7 @@ import Buttons from "./Buttons";
 import Social from "./Social";
 import ScrollDown from "./ScrollDown";
 
-const intro_data = {
+const section = {
     bg: "/images/hero-bg-3000.jpg",
     title: "An Amazing App <br> That Does It All.",
     description:
@@ -42,35 +42,35 @@ const intro_data = {
 const Intro = () => {
     return (
         <section id="intro" className="s-intro target-section">
-            {intro_data.bg && <div className="s-intro__bg" style={{ backgroundImage: `url(${intro_data.bg})`}}></div>}
+            {section.bg && <div className="s-intro__bg" style={{ backgroundImage: `url(${section.bg})`}}></div>}
 
             <div className="row s-intro__content">
                 <div className="column lg-12 s-intro__content-inner">
                     <div className="s-intro__content-left">
-                        {intro_data.title && (
+                        {section.title && (
                             <h1
                                 className="s-intro__content-title"
                                 dangerouslySetInnerHTML={{
-                                    __html: intro_data.title,
+                                    __html: section.title,
                                 }}
                             ></h1>
                         )}
                     </div>
                     <div className="s-intro__content-right">
-                        {intro_data.description && (
+                        {section.description && (
                             <p className="s-intro__content-desc body-text-2">
-                                {intro_data.description}
+                                {section.description}
                             </p>
                         )}
 
-                        {intro_data?.buttons && (
-                            <Buttons buttons={intro_data?.buttons} />
+                        {section?.buttons && (
+                            <Buttons buttons={section?.buttons} />
                         )}
                     </div>
                 </div>
             </div>
 
-            {intro_data?.social && <Social social={intro_data?.social} />}
+            {section?.social && <Social social={section?.social} />}
 
             <ScrollDown />
         </section>

@@ -8,7 +8,7 @@ const Buttons = ({ buttons }) => {
         <div className="column lg-12 s-download__badges">
             {buttons.map((btn, index) => {
                 switch(btn.template) {
-                    case "badge-appstore":
+                    case "app-store-badge":
                         return (
                             <Link href={btn.href} key={btn.template + index} passHref>
                                 <a className="badge-appstore">
@@ -16,7 +16,7 @@ const Buttons = ({ buttons }) => {
                                 </a>
                             </Link>
                         );
-                    case "badge-googleplay":
+                    case "play-store-badge":
                         return (
                             <Link href={btn.href} key={btn.template + index} passHref>
                                 <a className="badge-googleplay">
@@ -27,7 +27,7 @@ const Buttons = ({ buttons }) => {
                                 </a>
                             </Link>
                         );
-                    case "btn":
+                    case "button":
                         return (
                             <Link
                                 href={btn.href}

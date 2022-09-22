@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Review = ({ review: { img, name, position, text } }) => {
+const Review = ({ review: { image, name, position, text } }) => {
   return (
       <div className="s-testimonials__slide">
           <div className="s-testimonials__author">
               <img
-                  src={img}
+                  src={image}
                   alt={name}
                   className="s-testimonials__avatar"
               />

@@ -3,6 +3,8 @@ import Preloader from "./Preloader";
 import SEO from "./SEO";
 import Header from "./Header";
 import Footer from "./Footer";
+import dynamic from "next/dynamic";
+import { capitalise } from "@/libs/capitalise";
 
 const Layout = ({ metaTitle, metaDescription, children }) => {
     return (
@@ -42,5 +44,12 @@ export const SectionHeader = ({ header, number }) => {
         </div>
     );
 };
+
+export const BlockZone = ({ sections }) => {
+    if (sections) return sections.map((section, index) => {
+        const Comp = dynamic(() => import(`./${capitalise(section.template)}`));
+        return <Comp section={section} key={section.template + "block_zone_comp_key" + index} />
+    })
+}
 
 export default Layout;

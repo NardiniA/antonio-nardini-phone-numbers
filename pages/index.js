@@ -1,18 +1,19 @@
-import CTA from "@/components/CTA"
-import Intro from "@/components/Intro"
-import Layout from "@/components/Layout"
-import Pricing from "@/components/Pricing"
-import Testimonials from "@/components/Testimonials"
-import Steps from "@/components/Steps"
+import fs from "fs";
+import { join } from "path";
+import matter from "gray-matter";
+import Slug from "./[slug]";
 
-export default function Home() {
-  return (
-    <Layout>
-      <Intro />
-      <Steps />
-      <Testimonials />
-      <Pricing />
-      <CTA />
-    </Layout>
-  )
+export async function getStaticProps() {
+    const fileContents = fs.readFileSync(join("content/pages",  "home.md"));
+
+    const { data: frontMatter } = matter(fileContents);
+
+    return {
+        props: {
+            slug: "home",
+            frontMatter,
+        },
+    };
 }
+
+export default Slug;
