@@ -1,15 +1,15 @@
 ---
-label: Header Button
+label: Header Button Icon
 hide_body: true
-display_field: text
+display_field: icon
 fields:
-- name: text
-  type: text
-  config:
-    required: true
-  label: Text
 - name: href
   type: text
   config:
     required: true
   label: URL
+- name: icon
+  type: text
+  config:
+    required: true
+  label: Icon
