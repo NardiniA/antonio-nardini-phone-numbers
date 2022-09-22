@@ -1,7 +1,7 @@
 {
   "mainMenu": [
     {
-      "text": "Intro",
+      "text": "Home",
       "href": "/"
     },
     {
@@ -9,12 +9,12 @@
       "text": "About"
     },
     {
-      "href": "/pricing",
-      "text": "Pricing"
+      "href": "/numbers",
+      "text": "Numbers"
     },
     {
-      "href": "/download",
-      "text": "Download"
+      "href": "/contact",
+      "text": "Contact"
     }
   ],
   "cta": {
