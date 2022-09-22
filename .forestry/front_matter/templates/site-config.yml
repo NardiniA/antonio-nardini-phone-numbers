@@ -1,0 +1,16 @@
+---
+label: Site Config
+hide_body: true
+fields:
+- type: text
+  name: metaTitle
+  label: metaTitle
+- type: text
+  name: metaDescription
+  label: metaDescription
+- type: file
+  name: logo
+  label: logo
+- type: text
+  name: logoText
+  label: logoText
