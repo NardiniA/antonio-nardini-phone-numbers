@@ -3,7 +3,28 @@ new_page_extension: md
 auto_deploy: false
 admin_path: ''
 webhook_url: 
-sections: 
+sections:
+- type: heading
+  label: CONTENT
+- type: directory
+  path: content/pages
+  label: Pages
+  create: documents
+  match: "**/*"
+- type: heading
+  label: CONFIG
+- type: document
+  path: config/site.config.json
+  label: Site Config
+  match: "**/*"
+- type: document
+  path: config/menus.json
+  label: Menus
+  match: "**/*"
+- type: document
+  path: config/footer.json
+  label: Footer
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
