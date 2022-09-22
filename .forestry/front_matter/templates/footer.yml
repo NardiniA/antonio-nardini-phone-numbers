@@ -1,0 +1,53 @@
+---
+label: Footer
+hide_body: true
+fields:
+- type: field_group
+  name: subscribe
+  label: subscribe
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: boolean
+    name: display
+    label: display
+- type: field_group
+  name: main
+  label: main
+  fields:
+  - type: textarea
+    name: description
+    label: description
+  - type: field_group_list
+    name: social
+    label: social
+    fields:
+    - type: text
+      name: href
+      label: href
+    - type: text
+      name: text
+      label: text
+    - type: text
+      name: icon
+      label: icon
+  - type: field_group_list
+    name: links
+    label: links
+    fields:
+    - type: text
+      name: text
+      label: text
+    - type: text
+      name: href
+      label: href
+  - type: textarea
+    name: contact
+    label: contact
+  - type: list
+    name: copyright
+    label: copyright
