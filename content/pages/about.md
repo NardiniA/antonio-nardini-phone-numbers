@@ -27,6 +27,17 @@ sections:
   description: 'I am a web developer that specialises in creating dynamic, fast and
     inexpensive websites fully equipped with multiple sections and an admin system. '
   lightBackground: false
+- template: call-to-action
+  title: Get In Touch
+  slim: true
+  buttons:
+  - template: button
+    style: Default
+    href: "/contact"
+    text: Contact Us
+  text: Need a website? Want the fastest, <strong>affordable</strong> website available?
+    Look no further. Get started with websites from <strong>£150</strong> upfront
+    and then only <strong>£10 per year</strong> to run.
 - template: features
   cardBased: true
   lightBackground: true
@@ -48,17 +59,6 @@ sections:
       to millions of users across the globe.
     icon: globe
   description: ''
-- template: call-to-action
-  title: Get In Touch
-  slim: true
-  buttons:
-  - template: button
-    style: Default
-    href: "/contact"
-    text: Contact Us
-  text: Need a website? Want the fastest, <strong>affordable</strong> website available?
-    Look no further. Get started with websites from <strong>£150</strong> upfront
-    and then only <strong>£10 per year</strong> to run.
 - template: faq
   title: Frequently Asked Questions
   description: Got any questions about what we provide? Find the answers here or <a
