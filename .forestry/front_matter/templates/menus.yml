@@ -35,3 +35,5 @@ fields:
     config:
       required: true
   label: Header Button
+pages:
+- config/menus.json

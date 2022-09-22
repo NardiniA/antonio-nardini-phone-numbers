@@ -1,24 +1,24 @@
 {
-    "mainMenu": [
-        {
-            "text": "Intro",
-            "href": "/"
-        },
-        {
-            "href": "/about",
-            "text": "About"
-        },
-        {
-            "href": "/pricing",
-            "text": "Pricing"
-        },
-        {
-            "href": "/download",
-            "text": "Download"
-        }
-    ],
-    "cta": {
-        "text": "Get The App",
-        "href": "/"
+  "mainMenu": [
+    {
+      "text": "Intro",
+      "href": "/"
+    },
+    {
+      "href": "/about",
+      "text": "About"
+    },
+    {
+      "href": "/pricing",
+      "text": "Pricing"
+    },
+    {
+      "href": "/download",
+      "text": "Download"
     }
+  ],
+  "cta": {
+    "text": "Get The App",
+    "href": "/"
+  }
 }
