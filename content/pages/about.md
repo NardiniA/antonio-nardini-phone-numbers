@@ -7,7 +7,7 @@ sections:
   description: Who are we? What do we do? How is it accomplished?
   bg: ''
 - template: about
-  title: Who Are We
+  title: Top quality web developers helping small businesses.
   slider:
   - title: Fast.
     text: My websites are built with Next JS which is a static site generator and
