@@ -5,13 +5,14 @@ const Alert = ({
     message,
     type,
     location,
-    hide
+    hide,
+    autohide
 }) => {
   const [showing, setShowing] = useState(false);
   const [closing, setClosing] = useState(false);
   useEffect(() => {
     setShowing(true);
-    setTimeout(() => onClose(), [5000]);
+    if (autohide) setTimeout(() => onClose(), [autohide]);
     return () => setShowing(false);
   }, []);
 
@@ -24,7 +25,7 @@ const Alert = ({
   }
   
   return (
-    <div className={clsx("alert-box floating", type && `alert-box--${type}`, location && location, closing && "hideit", showing && "showit")}>
+    <div className={clsx("alert-box floating", type && `alert-box--${type}`, location && location, closing && "hideit", showing && "showit")} style={{ "--autohide-duration": autohide + "ms" }}>
         {message && <p dangerouslySetInnerHTML={{
             __html: message
         }} style={{ marginBottom: "0" }}></p>}

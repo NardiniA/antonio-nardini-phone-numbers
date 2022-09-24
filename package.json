@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "basiclightbox": "^5.0.4",
     "boxicons": "^2.1.2",
     "clsx": "^1.2.1",

@@ -2035,6 +2035,13 @@ select:focus {
     border: 1px solid var(--color-1-light);
 }
 
+@media screen and (max-width: 350px) {
+    input[type="reset"],
+    input[type="submit"] {
+        width: 100%;
+    }
+}
+
 label,
 legend {
     font-family: var(--font-1);
@@ -2442,6 +2449,7 @@ td:last-child {
  * ## alert box 
  * ------------------------------------------------------------------- */
 .alert-box {
+    --autohide-duration: 5s;
     padding: var(--vspace-0_75) 4rem var(--vspace-0_75) 3.2rem;
     margin-bottom: var(--vspace-1);
     border-radius: var(--border-radius);
@@ -2450,14 +2458,42 @@ td:last-child {
     font-size: var(--text-sm);
     line-height: var(--vspace-0_75);
     opacity: 0;
+    overflow: hidden;
     visibility: hidden;
     position: relative;
     transition-duration: 0.5s;
+}
+.alert-box::after, .alert-box.alert-box--info::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: (205, 32%, 31%, 1);
+    transition-duration: var(--autohide-duration);
+    transition-timing-function: initial;
+}
+
+.alert-box.alert-box--success::after {
+    background-color: hsla(76, 29%, 28%, 1) !important;
+}
+
+.alert-box.alert-box--error::after {
+    background-color: hsla(359, 50%, 50%, 1) !important;
+}
+
+.alert-box.alert-box--notice::after {
+    background-color: hsla(51, 30%, 30%, 1) !important;
 }
 
 .alert-box.showit {
     opacity: 1;
     visibility: visible;
+}
+
+.alert-box.showit::after {
+    width: 100%;
 }
 
 .alert-box__close {
@@ -5596,6 +5632,15 @@ img.u-pull-left {
     }
 }
 
+
+
+/* ===================================================================
+ * # CONTENT
+ *
+ *
+ * ------------------------------------------------------------------- */
+
+
 .s-styles {
     padding-top: var(--vspace-5);
     padding-bottom: var(--vspace-4);
@@ -5727,4 +5772,229 @@ img.u-pull-left {
 .content-tags .tags-list a:focus {
     background-color: var(--color-1);
     color: var(--color-white);
+}
+
+
+
+/* ===================================================================
+ * # PHONE NUMBERS
+ *
+ *
+ * ------------------------------------------------------------------- */
+
+.s-phone-search {
+    --input-height: 7.2rem;
+    --btn-width: 200px;
+    margin-bottom: var(--vspace-2);
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row wrap;
+    margin: 0;
+    width: 100%;
+}
+
+.search-form--error input, 
+.search-form--error input:hover, 
+.search-form--error input:focus, 
+.search-form--error input::placeholder {
+    background-color: var(--color-error) !important;
+    color: var(--color-error-content) !important;
+}
+
+.search-form--error .btn {
+    background-color: var(--color-error-content);
+    border-color: var(--color-error-content);
+}
+
+.search-form-error-msg {
+    margin-top: var(--vspace-0_5);
+    margin-bottom: 0;
+}
+
+.search-form input {
+    position: relative;
+    --input-height: 7.2rem;
+    width: calc(50% - calc(var(--btn-width) / 2));
+    color: var(--color-text);
+    border: none;
+    border-radius: 0;
+    padding: var(--input-vpadding) calc(2.8rem - 1px);
+    text-align: left;
+    margin: 0;
+}
+
+.search-form input:first-child {
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.search-form input:focus,
+.search-form input:hover {
+    box-shadow: none;
+    border: none;
+    background-color: var(--color-gray-5);
+}
+
+.search-form .btn--submit {
+    --btn-height: var(--input-height);
+    width: var(--btn-width);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .search-form {
+        display: block;
+    }
+
+    .search-form input,
+    .search-form .btn--submit {
+        width: 100%;
+        text-align: center;
+        border-radius: var(--border-radius) !important;
+    }
+
+    .search-form input {
+        margin-bottom: var(--vspace-0_625);
+    }
+}
+
+.table-animation {
+    animation: fadeInTable 2s forwards;
+}
+
+@keyframes fadeInTable {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.table-icon {
+    position: relative;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding: var(--vspace-0_5);
+    border-radius: var(--border-radius);
+    text-align: center;
+    color: var(--color-text);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 0;
+    line-height: 1;
+    transition-duration: 0.3s;
+}
+
+.table-icon:hover {
+    background-color: var(--color-gray-3);
+}
+
+.table-icon:focus {
+    background-color: var(--color-gray-7);
+}
+
+.table-icon::after {
+    content: "Copied!";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 1rem);
+    background-color: var(--color-gray-17);
+    color: var(--color-white);
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.5s;
+    top: -36px;
+    padding: 0.75rem 1rem;
+    font-size: var(--text-xs);
+    line-height: 1;
+    border-radius: var(--border-radius);
+    letter-spacing: 0.02em;
+}
+
+.table-icon:focus::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+}
+
+.table-icon i,
+.table-icon svg {
+    font-size: var(--text-size);
+    height: var(--text-size);
+    width: var(--text-size);
+    line-height: 1;
+    color: inherit;
+    fill: currentColor;
+}
+
+.table-responsive.skeleton tr th,
+.table-responsive.skeleton tr td {
+    width: 30%;
+    min-width: 100px;
+}
+
+.table-responsive.skeleton tr th div,
+.table-responsive.skeleton tr td div {
+    height: 20px;
+    width: 100%;
+    min-width: 100px;
+    margin: 8px 0;
+    background-color: var(--color-gray-5);
+    border-radius: 9999px;
+    animation: flash 2s infinite linear;
+}
+
+.table-responsive.skeleton tr th div {
+    height: 28px !important;
+}
+
+.table-responsive.skeleton tr th:last-child,
+.table-responsive.skeleton tr td:last-child {
+    min-width: 30px;
+}
+
+.table-responsive.skeleton tr th:last-child,
+.table-responsive.skeleton tr td:last-child {
+    width: 10%;
+    min-width: 30px;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.25;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 100%;
+    background-color: var(--color-gray-8);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-gray-12);
+    border-radius: var(--border-radius);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-gray-14);
 }
