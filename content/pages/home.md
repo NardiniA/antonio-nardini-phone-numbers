@@ -1,5 +1,5 @@
 ---
-metaTitle: Phone Number Directory - Antonio Nardini
+metaTitle: Home | Phone Number Directory - Antonio Nardini
 metaDescription: A collection of phone numbers from BT online phone book.
 sections:
 - template: intro
