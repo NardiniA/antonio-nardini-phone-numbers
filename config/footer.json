@@ -2,7 +2,7 @@
   "subscribe": {
     "title": "Sign Up to Our Newsletter.",
     "subtitle": "Subscribe for updates, special offers and more.",
-    "display": true
+    "display": false
   },
   "main": {
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.",
