@@ -6,7 +6,7 @@ const Reset = () => {
             className="btn"
             type="reset"
             value="Reset"
-            style={{ minWidth: "25%" }}
+            style={{ minWidth: "25%", marginRight: "1.6rem", float: "right" }}
         />
     );
 };

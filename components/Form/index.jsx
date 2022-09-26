@@ -23,7 +23,7 @@ const Form = ({ form }) => {
     return (
         <div className="column lg-12">
             {showAlert && <Alert message={alert.message} type={alert.type} hide={hide} autohide={5000} />}
-            <form onSubmit={handleSubmit(onSubmit)} className="row" method={form.method} action={form.action}>
+            <form onSubmit={handleSubmit(onSubmit)} className="row" method={form.method} action={form.action} target="_blank">
                 <FieldZone fields={form?.fields} register={register} errors={errors} />
                 <div className="column lg-12">
                     <Submit />
