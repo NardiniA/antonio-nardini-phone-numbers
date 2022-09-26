@@ -3,6 +3,39 @@ label: Site Config
 hide_body: true
 display_field: metaTitle
 fields:
+- name: metaData
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: true
+      max: 155
+    label: Website Title
+  - name: description
+    type: text
+    config:
+      required: true
+      max: 155
+    label: Website Description
+  - name: author
+    type: text
+    config:
+      required: true
+      max: 155
+    label: Website Author
+  - name: keywords
+    type: tag_list
+    default: []
+    label: Website Keywords
+  - name: ogImage
+    type: file
+    config:
+      maxSize: 64
+    label: Default Image
+    description: Default Image used for when sending links to people or social media.
+  label: Meta Data
 - type: text
   name: metaTitle
   label: Page Title
@@ -16,6 +49,17 @@ fields:
   config:
     required: true
     max: 155
+- name: baseURL
+  type: text
+  config:
+    required: true
+  label: base URL
+- name: favicon
+  type: file
+  config:
+    maxSize: 64
+  label: Favicon
+  description: Website Icon
 - type: file
   name: logo
   label: Logo
