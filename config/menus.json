@@ -3,22 +3,10 @@
     {
       "text": "Home",
       "href": "/"
-    },
-    {
-      "href": "/about",
-      "text": "About"
-    },
-    {
-      "href": "/numbers",
-      "text": "Numbers"
-    },
-    {
-      "href": "/contact",
-      "text": "Contact"
     }
   ],
   "cta": {
     "text": "Get Numbers",
-    "href": "/numbers"
+    "href": "/"
   }
 }
