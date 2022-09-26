@@ -23,7 +23,7 @@ const SEO = ({
           <meta name="keyword" content={metaKeywords} />
           <meta name="author" content={metaAuthor} />
           <meta name="description" content={metaDescription} />
-          <link rel="canonical" href={slug} />
+          <link rel="canonical" href={siteConfig.baseURL + "/" + slug} />
 
           <meta property="og:title" content={metaTitle} />
           <meta property="og:description" content={metaDescription} />
@@ -50,7 +50,6 @@ SEO.defaultProps = {
     metaAuthor: siteConfig.metaData.author,
     metaKeywords: siteConfig.metaData.keywords,
     ogImage: siteConfig.metaData.ogImage,
-    slug: siteConfig.baseURL,
 }
 
 export default SEO

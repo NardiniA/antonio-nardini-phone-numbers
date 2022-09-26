@@ -6,11 +6,26 @@ import Footer from "./Footer";
 import dynamic from "next/dynamic";
 import { capitalise } from "@/libs/capitalise";
 
-const Layout = ({ metaTitle, metaDescription, children }) => {
+const Layout = ({
+    metaTitle,
+    metaDescription,
+    metaAuthor,
+    metaKeywords,
+    ogImage,
+    slug,
+    children,
+}) => {
     return (
         <>
             <Preloader />
-            <SEO metaTitle={metaTitle} metaDescription={metaDescription} />
+            <SEO
+                metaTitle={metaTitle}
+                metaDescription={metaDescription}
+                metaAuthor={metaAuthor}
+                metaKeywords={metaKeywords}
+                ogImage={ogImage}
+                slug={slug}
+            />
 
             <div id="page" className="s-pagewrap">
                 <Header />
@@ -35,21 +50,32 @@ export const SectionHeader = ({ header, number }) => {
                 </div>
             )}
             {header.description && (
-              <div className="column lg-6 stack-on-1000 desc-block">
-                <p className="desc lead" dangerouslySetInnerHTML={{
-                    __html: header.description
-                }}></p>
-              </div>
+                <div className="column lg-6 stack-on-1000 desc-block">
+                    <p
+                        className="desc lead"
+                        dangerouslySetInnerHTML={{
+                            __html: header.description,
+                        }}
+                    ></p>
+                </div>
             )}
         </div>
     );
 };
 
 export const BlockZone = ({ sections }) => {
-    if (sections) return sections.map((section, index) => {
-        const Comp = dynamic(() => import(`./${capitalise(section.template)}`));
-        return <Comp section={section} key={section.template + "block_zone_comp_key" + index} />
-    })
-}
+    if (sections)
+        return sections.map((section, index) => {
+            const Comp = dynamic(() =>
+                import(`./${capitalise(section.template)}`)
+            );
+            return (
+                <Comp
+                    section={section}
+                    key={section.template + "block_zone_comp_key" + index}
+                />
+            );
+        });
+};
 
 export default Layout;

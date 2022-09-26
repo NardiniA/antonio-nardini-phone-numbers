@@ -2980,7 +2980,7 @@ img.u-pull-left {
  * ------------------------------------------------------------------- */
 .s-header {
     --header-height: 64px;
-    --logo-width: 90px;
+    --logo-width: 150px;
     z-index: 100;
     background-color: transparent;
     height: var(--header-height);
@@ -3001,7 +3001,7 @@ img.u-pull-left {
 
 .s-header.sticky {
     --header-height: 80px;
-    --logo-width: 82px;
+    --logo-width: 110px;
     opacity: 0;
     visibility: hidden;
     background-color: var(--color-gray-19);
@@ -3056,7 +3056,7 @@ img.u-pull-left {
  * ## main navigation
  * -------------------------------------------------------------------- */
 .s-header__nav {
-    margin-left: var(--vspace-1_25);
+    margin-left: var(--vspace-0_75);
 }
 
 .s-header__nav ul {
@@ -3239,7 +3239,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 800px) {
     .s-header {
-        --logo-width: 80px;
+        --logo-width: 100px;
         top: var(--vspace-0_5);
     }
 
@@ -3369,7 +3369,6 @@ img.u-pull-left {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/hero-bg-3000.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3782,7 +3781,6 @@ img.u-pull-left {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/hero-bg-3000.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -4875,7 +4873,7 @@ img.u-pull-left {
 }
 
 .footer__logo img {
-    width: 100px;
+    width: 150px;
 }
 
 /* --------------------------------------------------------------------
@@ -5155,7 +5153,10 @@ img.u-pull-left {
     transition-duration: 0.4s;
 }
 
-.error-input::placeholder {
+.error-input::placeholder,
+.error-input::-ms-input-placeholder,
+.error-input::-moz-placeholder,
+.error-input::-webkit-input-placeholder {
     color: var(--color-error-content) !important;
     transition-duration: 0.4s;
 }
@@ -5795,24 +5796,6 @@ img.u-pull-left {
     width: 100%;
 }
 
-.search-form--error input, 
-.search-form--error input:hover, 
-.search-form--error input:focus, 
-.search-form--error input::placeholder {
-    background-color: var(--color-error) !important;
-    color: var(--color-error-content) !important;
-}
-
-.search-form--error .btn {
-    background-color: var(--color-error-content);
-    border-color: var(--color-error-content);
-}
-
-.search-form-error-msg {
-    margin-top: var(--vspace-0_5);
-    margin-bottom: 0;
-}
-
 .search-form input {
     position: relative;
     --input-height: 7.2rem;
@@ -5841,6 +5824,27 @@ img.u-pull-left {
     width: var(--btn-width);
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
     margin: 0;
+}
+
+.search-form--error input, 
+.search-form--error input:hover, 
+.search-form--error input:focus, 
+.search-form--error input::placeholder,
+.search-form--error input::-ms-input-placeholder,
+.search-form--error input::-moz-placeholder,
+.search-form--error input::-webkit-input-placeholder {
+    background-color: var(--color-error) !important;
+    color: var(--color-error-content) !important;
+}
+
+.search-form--error .btn {
+    background-color: var(--color-error-content);
+    border-color: var(--color-error-content);
+}
+
+.search-form-error-msg {
+    margin-top: var(--vspace-0_5);
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 700px) {
