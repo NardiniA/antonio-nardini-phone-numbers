@@ -42,3 +42,4 @@ fields:
     max: 
 pages:
 - content/pages/home.md
+- content/pages/how-it-works.md
