@@ -27,6 +27,14 @@
       {
         "text": "Home",
         "href": "/"
+      },
+      {
+        "text": "How it works",
+        "href": "/how-it-works"
+      },
+      {
+        "text": "Contact",
+        "href": "/contact"
       }
     ],
     "contact": "Do you have a question? Send us a word: <br> <a href=\"mailto:contact@antonionardini.com\" title=\"Contact Me\">contact@antonionardini.com</a>",
