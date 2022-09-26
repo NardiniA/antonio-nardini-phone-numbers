@@ -48,15 +48,23 @@ const SEO = ({
                 name="apple-mobile-web-app-title"
                 content="Phone Number Directory"
             />
+            <meta name="application-name" content="Phone Number Directory" />
             <meta name="apple-mobile-web-app-capable" content="yes" />
             <meta
                 name="apple-mobile-web-app-status-bar-style"
                 content="default"
             />
             <link rel="manifest" href="/site.webmanifest" />
+
+            <meta name="format-detection" content="telephone=no" />
+            <meta name="msapplication-TileColor" content="#3F885C" />
+            <meta name="msapplication-tap-highlight" content="no" />
             <link rel="theme-color" href="#3F885C" />
             <link rel="background-color" href="#ffffff" />
 
+            <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152.png" />
+            <link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167.png" />
+            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
             <link
                 rel="apple-touch-startup-image"
                 href="/splash/apple-splash-2048-2732.jpg"
