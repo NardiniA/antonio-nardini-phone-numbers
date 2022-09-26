@@ -2292,12 +2292,18 @@ td:last-child {
     -webkit-overflow-scrolling: touch;
 }
 
-td:first-child {
+td:first-child,
+.table-responsive.skeleton th:first-child,
+.table-responsive.skeleton td:first-child {
     min-width: 175px;
 }
 
 td:nth-child(2), 
-td:nth-child(3) {
+td:nth-child(3),
+.table-responsive.skeleton th:nth-child(2),
+.table-responsive.skeleton td:nth-child(2),
+.table-responsive.skeleton th:nth-child(3),
+.table-responsive.skeleton td:nth-child(3) {
     min-width: 225px;
 }
 
