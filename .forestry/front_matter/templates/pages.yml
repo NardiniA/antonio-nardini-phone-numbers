@@ -41,5 +41,6 @@ fields:
     min: 1
     max: 
 pages:
+- content/pages/contact.md
 - content/pages/home.md
 - content/pages/how-it-works.md
