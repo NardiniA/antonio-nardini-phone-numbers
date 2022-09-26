@@ -2292,6 +2292,15 @@ td:last-child {
     -webkit-overflow-scrolling: touch;
 }
 
+td:first-child {
+    min-width: 175px;
+}
+
+td:nth-child(2), 
+td:nth-child(3) {
+    min-width: 225px;
+}
+
 /* ===================================================================
  * # COMPONENTS
  *
