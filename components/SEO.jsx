@@ -62,9 +62,47 @@ const SEO = ({
             <link rel="theme-color" href="#3F885C" />
             <link rel="background-color" href="#ffffff" />
 
-            <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152.png" />
-            <link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167.png" />
-            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+            <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3f885c" />
+            <link rel="shortcut icon" href="/favicon.ico" />
+            <link
+                rel="icon"
+                type="image/png"
+                sizes="32x32"
+                href="/favicon-32x32.png"
+            />
+            <link
+                rel="icon"
+                type="image/png"
+                sizes="16x16"
+                href="/favicon-16x16.png"
+            />
+            <link
+                rel="icon"
+                type="image/png"
+                sizes="192x192"
+                href="/android-chrome-192x192.png"
+            />
+            <link
+                rel="icon"
+                type="image/png"
+                sizes="512x512"
+                href="/android-chrome-512x512.png"
+            />
+            <link
+                rel="apple-touch-icon"
+                sizes="152x152"
+                href="/apple-touch-icon-152.png"
+            />
+            <link
+                rel="apple-touch-icon"
+                sizes="167x167"
+                href="/apple-touch-icon-167.png"
+            />
+            <link
+                rel="apple-touch-icon"
+                sizes="180x180"
+                href="/apple-touch-icon.png"
+            />
             <link
                 rel="apple-touch-startup-image"
                 href="/splash/apple-splash-2048-2732.jpg"
