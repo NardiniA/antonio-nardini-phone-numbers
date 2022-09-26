@@ -3,7 +3,7 @@ metaTitle: How it works | Phone Number Directory - Antonio Nardini
 metaDescription: How to use the Antonio Nardini phone number directory system.
 sections:
 - template: banner
-  title: About Us
+  title: How it works.
   description: ''
   bg: ''
 - template: steps
