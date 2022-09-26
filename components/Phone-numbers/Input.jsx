@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 import { getNumbers } from "@/libs/getNumbers";
 import { removeDuplicates } from "@/libs/removeDuplicates";
@@ -43,12 +43,13 @@ const Input = ({ setNumbers, setAlert, setIsLoading }) => {
                 <div>
                     <form
                         id="search-form"
-                        className={`search-form ${Object.values(errors)[0] && "search-form--error"}`}
+                        className={`search-form ${errors["town"] && "form--error"}`}
                         onSubmit={handleSubmit(onSubmit)}
                     >
                         <input
                             type="text"
                             placeholder="Town or Postcode"
+                            className={errors["town"] && "input--error"}
                             {...register("town", {
                                 required: {
                                     value: true,
@@ -59,6 +60,7 @@ const Input = ({ setNumbers, setAlert, setIsLoading }) => {
                         <input
                             type="text"
                             placeholder="Street"
+                            className={errors["street"] && "input--error"}
                             {...register("street", {})}
                         />
                         <button
@@ -69,7 +71,7 @@ const Input = ({ setNumbers, setAlert, setIsLoading }) => {
                             Search
                         </button>
                     </form>
-                    {Object.values(errors)[0] && <p className="error-status search-form-error-msg">{Object.values(errors)[0].message}</p>}
+                    {errors["town"] && <p className="error-status search-form-error-msg">{errors["town"].message}</p>}
                 </div>
             </div>
         </div>
