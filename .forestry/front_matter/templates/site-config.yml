@@ -36,19 +36,6 @@ fields:
     label: Default Image
     description: Default Image used for when sending links to people or social media.
   label: Meta Data
-- type: text
-  name: metaTitle
-  label: Page Title
-  config:
-    required: true
-    max: 155
-  default: Phone Number Directory - Antonio Nardini
-- type: text
-  name: metaDescription
-  label: Page Description
-  config:
-    required: true
-    max: 155
 - name: baseURL
   type: text
   config:
