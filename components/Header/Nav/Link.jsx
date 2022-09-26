@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 const Link = ({ link, handleClick }) => {
     const router = useRouter();
-    const current = link.href === router.pathname ? "current" : "";
+    const current = link.href === router.asPath ? "current" : "";
 
     return (
         <li className={current}>
