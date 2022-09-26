@@ -26,9 +26,11 @@ fields:
       max: 155
     label: Website Author
   - name: keywords
-    type: tag_list
-    default: []
+    type: text
+    config:
+      required: true
     label: Website Keywords
+    description: Comma separated list of keywords relating to the website.
   - name: ogImage
     type: file
     config:
