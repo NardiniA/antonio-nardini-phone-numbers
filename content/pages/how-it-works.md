@@ -44,6 +44,8 @@ sections:
       text: 'Now, you can repeat steps 2 and 3 to find more phone numbers. '
     lightBackground: true
     description: ''
-    imgs: []
+    imgs:
+    - https://res.cloudinary.com/antonio-nardini/image/upload/v1664197800/Phone_Numbers_Search_Form_Mockup_wzultz.png
+    - https://res.cloudinary.com/antonio-nardini/image/upload/v1664197800/Phone_Numbers_Website_fez6gr.png
 
 ---
