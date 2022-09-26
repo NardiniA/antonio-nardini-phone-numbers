@@ -3,6 +3,14 @@
     {
       "text": "Home",
       "href": "/"
+    },
+    {
+      "text": "How it works",
+      "href": "/how-it-works"
+    },
+    {
+      "text": "Contact",
+      "href": "/contact"
     }
   ],
   "cta": {
