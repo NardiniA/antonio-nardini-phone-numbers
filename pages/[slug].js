@@ -5,7 +5,7 @@ import Layout, { BlockZone } from "@/components/Layout";
 
 export default function Slug({ slug, frontMatter }) {
     return (
-        <Layout>
+        <Layout metaTitle={frontMatter.metaTitle} metaDescription={frontMatter.metaDescription} slug={slug}>
             <BlockZone sections={frontMatter?.sections} />
         </Layout>
     );

@@ -1,21 +1,11 @@
 {
-  "metaTitle": "Phone Number Directory - Antonio Nardini",
-  "metaDescription": "Search for phone numbers from BT Phonebook quickly and easily.",
   "logo": "https://res.cloudinary.com/antonio-nardini/image/upload/v1663855106/logo_e2iunw.svg",
   "logoText": "Phone Number Directory - Antonio Nardini",
   "metaData": {
     "description": "Search for phone numbers from BT Phonebook quickly and easily.",
     "title": "Phone Number Directory - Antonio Nardini",
     "author": "Antonio Nardini",
-    "keywords": [
-      "BT Phonebook",
-      "Antonio Nardini",
-      "Phone",
-      "Number",
-      "Phone Number",
-      "Phone Number Directory",
-      "Directory"
-    ],
+    "keywords": "BT Phonebook, Antonio Nardini, Phone, Number, Phone Number, Phone Number Directory, Directory",
     "ogImage": "https://res.cloudinary.com/antonio-nardini/image/upload/v1664190000/antoine-barres-jay5BqVyf5A-unsplash_1_qdrjr7.jpg"
   },
   "baseURL": "https://phone-numbers.antonionardini.com",

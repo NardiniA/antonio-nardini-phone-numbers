@@ -3,46 +3,10 @@ import Buttons from "./Buttons";
 import Social from "./Social";
 import ScrollDown from "./ScrollDown";
 
-const section = {
-    bg: "/images/hero-bg-3000.jpg",
-    title: "An Amazing App <br> That Does It All.",
-    description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis lacus interdum dictum dolor sit amet lectus ornare nunc non.",
-    buttons: [
-        {
-            template: "header-btn",
-            text: "Get Started",
-            href: "/",
-        },
-        {
-            template: "header-btn-icon",
-            href: "/",
-            icon: "play",
-        },
-    ],
-    social: [
-        {
-            href: "/",
-            text: "Facebook",
-            icon: "facebook-square",
-        },
-        {
-            href: "/",
-            text: "Twitter",
-            icon: "twitter",
-        },
-        {
-            href: "/",
-            text: "Instagram",
-            icon: "instagram",
-        },
-    ],
-};
-
-const Intro = () => {
+const Intro = ({ section }) => {
     return (
         <section id="intro" className="s-intro target-section">
-            {section.bg && <div className="s-intro__bg" style={{ backgroundImage: `url(${section.bg})`}}></div>}
+            {section.bg && <div className="s-intro__bg" style={{ backgroundImage: `url(${section.bg})` }}></div>}
 
             <div className="row s-intro__content">
                 <div className="column lg-12 s-intro__content-inner">
